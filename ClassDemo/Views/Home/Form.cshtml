@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Form";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Form</h2>
+
+
+@*@{
+    var welcomeMessage = "";
+    if (IsPost)
+    {
+        var id = Request["id"];
+        var name = Request["name"];
+        var age = Request["age"];
+        var mobile = Request["mobile"];
+        welcomeMessage = "Welcome  " + name +" And we will get back to you soon.";
+    }
+}*@
+
+<div class="container">
+    <h1>Application Form</h1>
+    <form method="post">
+
+        id <input type="text" id="id" name="id" />
+        Name <input type="text" id="name" name="name" />
+        SurName<input type="text" id="surename" name="surname" />
+
+        <select id="gender" name="gender">
+            <option value="1">FeMale</option>
+            <option value="2">Male</option>
+        </select>
+
+        Age<input type="text" id="age" name="age" />
+        Mobile<input type="text" id="mobile" name="mobile" />
+        <input type="submit" value="Post Send" />
+
+    </form>
+</div>
+@*<p>@welcomeMessage</p>*@
+<p>@ViewBag.Message</p>*

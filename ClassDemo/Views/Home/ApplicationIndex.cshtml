@@ -1,0 +1,38 @@
+﻿
+
+
+@model IEnumerable<ClassDemo.Models.Application>
+
+@{
+    ViewBag.Title = "ApplicationIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Application Index</h2>
+@Html.ActionLink("Create New Application", "Form")
+
+ <table class="table table-condensed">
+    <thead class="thead-inverse">
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Mobile Number</th>
+         </tr>
+    </thead>
+    @foreach (var app in Model)
+    {
+        <tr>
+
+            <td>@Html.DisplayFor(modelItem => app.id)</td>
+            <td>@Html.DisplayFor(modelItem => app.name)</td>
+            <td>@Html.DisplayFor(modelItem => app.age)</td>
+            <td>@Html.DisplayFor(modelItem => app.gender)</td>
+            <td>@Html.DisplayFor(modelItem => app.mobile)</td>
+
+ 
+        </tr>
+    }
+
+</table>
