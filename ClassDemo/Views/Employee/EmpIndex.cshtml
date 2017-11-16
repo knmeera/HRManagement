@@ -1,0 +1,69 @@
+﻿
+@model IEnumerable<ClassDemo.Models.Employee>
+
+@{
+    ViewBag.Title = "EmpIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create Employee</h2>
+<table class="table table-condensed">
+    <thead class="thead-inverse">
+        <tr class="row">
+            <th class="col-md-4">Id</th>
+            <th class="col-md-4">Name</th>
+            <th class="col-md-4">LastName</th>
+            <th class="col-md-4">Gender</th>
+            <th class="col-md-4">DOB</th>
+            <th class="col-md-4">Street1</th>
+            <th class="col-md-4">Street2</th>
+            <th class="col-md-4">City</th>
+            <th class="col-md-4">PinCode</th>
+            <th class="col-md-4">District</th>
+            <th class="col-md-4">State</th>
+            <th class="col-md-4">Country</th>
+            <th class="col-md-4">Experience</th>
+            <th class="col-md-4">Work State</th>
+            <th class="col-md-4">Work Load</th>
+            <th class="col-md-4">Work Country</th>
+            <th class="col-md-4">Address</th>
+            <th class="col-md-4">Enable</th>
+            @*<th class="col-md-4">Image</th>*@
+        </tr>
+    </thead>
+    @foreach (var emp in Model)
+    {
+        <tr class="row">
+
+            <td class="col-md-4">@Html.DisplayFor(modelItem => emp.empid)</td>
+            <td class="col-md-4">@Html.DisplayFor(modelItem => emp.firstname)</td>
+            <td class="col-md-4">@Html.DisplayFor(modelItem => emp.lastname)</td>
+
+            <td class="col-md-4">@Html.DisplayFor(modelItem => emp.gender)</td>
+            <td class="col-md-4">@Html.DisplayFor(modelItem => emp.dob)</td>
+            <td class="col-md-4">@Html.DisplayFor(modelItem => emp.street1)</td>
+
+            <td class="col-md-4">@Html.DisplayFor(modelItem => emp.street2)</td>
+            <td class="col-md-4">@Html.DisplayFor(modelItem => emp.city)</td>
+            <td class="col-md-4">@Html.DisplayFor(modelItem => emp.pin)</td>
+
+            <td class="col-md-4">@Html.DisplayFor(modelItem => emp.dist)</td>
+            <td class="col-md-4">@Html.DisplayFor(modelItem => emp.state)</td>
+            <td class="col-md-4">@Html.DisplayFor(modelItem => emp.country)</td>
+
+            <td class="col-md-4">@Html.DisplayFor(modelItem => emp.exp)</td>
+            <td class="col-md-4">@Html.DisplayFor(modelItem => emp.workstate)</td>
+            <td class="col-md-4">@Html.DisplayFor(modelItem => emp.workload)</td>
+
+            <td class="col-md-4">@Html.DisplayFor(modelItem => emp.workcountry)</td>
+            <td class="col-md-4">@Html.DisplayFor(modelItem => emp.address)</td>
+            <td class="col-md-4">@Html.DisplayFor(modelItem => emp.enable)</td>
+
+            @*<td><img src="@Url.Content(emp.filename)" alt="Image" height="50" width="50" /></td>*@
+
+
+        </tr>
+    }
+
+</table>
+
