@@ -1,0 +1,104 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h1>Employee Details</h1>
+    <form method="post">
+        <div class="row">
+            <div class="col-md-4">
+                Empid:<input type="text" id="empid" name="empid" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                First Name:<input type="text" id="firstname" name="firstname" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                Last Name:<input type="text" id="lastname" name="lastname" class="form-control" />
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-4">
+                Gender:<select id="gender" name="gender" class="form-control">
+                    <option value="0">..Select..</option>
+                    <option value="M">Male</option>
+                    <option value="F">FeMale</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                DOB:<input type="text" id="dob" name="dob" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                Street1:<input type="text" id="street1" name="street1" class="form-control" />
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-4">
+                Street2:<input type="text" id="street2" name="street2" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                City:<input type="text" id="city" name="city" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                Pin Code:<input type="text" id="pin" name="pin" class="form-control" />
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-4">
+                District:<input type="text" id="dist" name="dist" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                State:<input type="text" id="state" name="state" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                Country:<input type="text" id="country" name="country" class="form-control" />
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-4">
+                Total Experience:<input type="text" id="exp" name="exp" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                Work State:<input type="text" id="workstate" name="workstate" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                Work Load:<input type="text" id="workload" name="workload" class="form-control" />
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-4">
+                Work Country:<input type="text" id="workcountry" name="workcountry" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                Address:<input type="text" id="address" name="address" cols="40" rows="5" style="width:200px; height:50px;" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                Enable:<select id="enable" name="enable" class="form-control">
+                    <option value="0">..Select..</option>
+                    <option value="A">Active</option>
+                    <option value="D">DeActive</option>
+                </select>
+            </div>
+        </div>
+        <br />
+        @*<div class="row">
+            <div class="col-md-4">
+                Profile Pic:<input type="file" id="photo" name="photo">
+            </div>
+        </div>
+        <br />*@
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <input type="submit" value="Send" class="btn-group" style="background-color:lightgrey;width:120px;height:40px;font:bold" />
+            </div>
+        </div>
+    </form>
+</div>
