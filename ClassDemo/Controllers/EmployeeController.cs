@@ -20,7 +20,7 @@ namespace ClassDemo.Controllers
             return View();
         }
 
-        public ActionResult Detailstest(int id)
+        public ActionResult Detailstest1(int id)
         {
             return View();
         }
