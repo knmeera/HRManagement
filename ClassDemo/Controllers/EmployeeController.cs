@@ -20,6 +20,11 @@ namespace ClassDemo.Controllers
             return View();
         }
 
+        public ActionResult Detailstest(int id)
+        {
+            return View();
+        }
+
         // GET: Employee/Create
         public ActionResult Create()
         {
